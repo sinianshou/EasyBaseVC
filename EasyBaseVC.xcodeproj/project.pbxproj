@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2021CD4F626A91EBA40DD803 /* libPods-EasyBaseVC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13292BBA55414FB69DF65DCC /* libPods-EasyBaseVC.a */; };
+		5F105241209AB24E006404A8 /* UIEasyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F105240209AB24E006404A8 /* UIEasyCollectionViewController.m */; };
+		5F105249209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F105248209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m */; };
+		5F10524E209ABB91006404A8 /* UIEasyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10524D209ABB91006404A8 /* UIEasyCollectionViewCell.m */; };
+		5F6541F32099689E00BBFD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6541F22099689E00BBFD09 /* AppDelegate.m */; };
+		5F6541F62099689E00BBFD09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6541F52099689E00BBFD09 /* ViewController.m */; };
+		5F6541F92099689E00BBFD09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6541F72099689E00BBFD09 /* Main.storyboard */; };
+		5F6541FB209968A400BBFD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6541FA209968A400BBFD09 /* Assets.xcassets */; };
+		5F6541FE209968A400BBFD09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6541FC209968A400BBFD09 /* LaunchScreen.storyboard */; };
+		5F654201209968A400BBFD09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F654200209968A400BBFD09 /* main.m */; };
+		5F65420B209968A500BBFD09 /* EasyBaseVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65420A209968A500BBFD09 /* EasyBaseVCTests.m */; };
+		5F654216209968A500BBFD09 /* EasyBaseVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F654215209968A500BBFD09 /* EasyBaseVCUITests.m */; };
+		5F65422E20998AF000BBFD09 /* NSDictionary+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65422D20998AF000BBFD09 /* NSDictionary+EasyExtension.m */; };
+		5F65423120998B1100BBFD09 /* NSString+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65423020998B1100BBFD09 /* NSString+EasyExtension.m */; };
+		5F65423420998B2200BBFD09 /* UIView+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65423320998B2200BBFD09 /* UIView+EasyExtension.m */; };
+		5F65423720998B3200BBFD09 /* NSObject+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65423620998B3200BBFD09 /* NSObject+EasyExtension.m */; };
+		5F65423A20998BAB00BBFD09 /* UIEasyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65423920998BAB00BBFD09 /* UIEasyTableViewCell.m */; };
+		5F65423D20998BBE00BBFD09 /* UIEasyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65423C20998BBE00BBFD09 /* UIEasyView.m */; };
+		5F65424020998BD900BBFD09 /* UIEasyControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65423F20998BD900BBFD09 /* UIEasyControl.m */; };
+		5F65424520998D3300BBFD09 /* UIEasyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65424420998D3300BBFD09 /* UIEasyViewController.m */; };
+		5F65424820998D5000BBFD09 /* UIEasyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65424720998D5000BBFD09 /* UIEasyTableViewController.m */; };
+		5F654250209990E600BBFD09 /* EasyBaseLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F654252209990E600BBFD09 /* EasyBaseLocalizable.strings */; };
+		5FC2BCB420A04CBF00462C54 /* UIColor+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2BCB320A04CBF00462C54 /* UIColor+EasyExtension.m */; };
+		5FC2BCBA20A07D9D00462C54 /* UINavigationBar+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F654207209968A500BBFD09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F6541E62099689E00BBFD09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6541ED2099689E00BBFD09;
+			remoteInfo = EasyBaseVC;
+		};
+		5F654212209968A500BBFD09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F6541E62099689E00BBFD09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6541ED2099689E00BBFD09;
+			remoteInfo = EasyBaseVC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13292BBA55414FB69DF65DCC /* libPods-EasyBaseVC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyBaseVC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F10523F209AB24E006404A8 /* UIEasyCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyCollectionViewController.h; sourceTree = "<group>"; };
+		5F105240209AB24E006404A8 /* UIEasyCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyCollectionViewController.m; sourceTree = "<group>"; };
+		5F105247209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		5F105248209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		5F10524B209AB8B4006404A8 /* EasyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyConfig.h; sourceTree = "<group>"; };
+		5F10524C209ABB91006404A8 /* UIEasyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyCollectionViewCell.h; sourceTree = "<group>"; };
+		5F10524D209ABB91006404A8 /* UIEasyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyCollectionViewCell.m; sourceTree = "<group>"; };
+		5F6541EE2099689E00BBFD09 /* EasyBaseVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBaseVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6541F12099689E00BBFD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F6541F22099689E00BBFD09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F6541F42099689E00BBFD09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5F6541F52099689E00BBFD09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5F6541F82099689E00BBFD09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F6541FA209968A400BBFD09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F6541FD209968A400BBFD09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F6541FF209968A400BBFD09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F654200209968A400BBFD09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F654206209968A500BBFD09 /* EasyBaseVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBaseVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F65420A209968A500BBFD09 /* EasyBaseVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyBaseVCTests.m; sourceTree = "<group>"; };
+		5F65420C209968A500BBFD09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F654211209968A500BBFD09 /* EasyBaseVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBaseVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F654215209968A500BBFD09 /* EasyBaseVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyBaseVCUITests.m; sourceTree = "<group>"; };
+		5F654217209968A500BBFD09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F654224209969E100BBFD09 /* EasyBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyBase.h; sourceTree = "<group>"; };
+		5F65422820996A6F00BBFD09 /* EasyMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyMacros.h; sourceTree = "<group>"; };
+		5F65422A2099896F00BBFD09 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5F65422B20998AD300BBFD09 /* EasyCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyCategory.h; sourceTree = "<group>"; };
+		5F65422C20998AF000BBFD09 /* NSDictionary+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EasyExtension.h"; sourceTree = "<group>"; };
+		5F65422D20998AF000BBFD09 /* NSDictionary+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EasyExtension.m"; sourceTree = "<group>"; };
+		5F65422F20998B1100BBFD09 /* NSString+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EasyExtension.h"; sourceTree = "<group>"; };
+		5F65423020998B1100BBFD09 /* NSString+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EasyExtension.m"; sourceTree = "<group>"; };
+		5F65423220998B2200BBFD09 /* UIView+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+EasyExtension.h"; sourceTree = "<group>"; };
+		5F65423320998B2200BBFD09 /* UIView+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+EasyExtension.m"; sourceTree = "<group>"; };
+		5F65423520998B3200BBFD09 /* NSObject+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EasyExtension.h"; sourceTree = "<group>"; };
+		5F65423620998B3200BBFD09 /* NSObject+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EasyExtension.m"; sourceTree = "<group>"; };
+		5F65423820998BAB00BBFD09 /* UIEasyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyTableViewCell.h; sourceTree = "<group>"; };
+		5F65423920998BAB00BBFD09 /* UIEasyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyTableViewCell.m; sourceTree = "<group>"; };
+		5F65423B20998BBE00BBFD09 /* UIEasyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyView.h; sourceTree = "<group>"; };
+		5F65423C20998BBE00BBFD09 /* UIEasyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyView.m; sourceTree = "<group>"; };
+		5F65423E20998BD900BBFD09 /* UIEasyControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyControl.h; sourceTree = "<group>"; };
+		5F65423F20998BD900BBFD09 /* UIEasyControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyControl.m; sourceTree = "<group>"; };
+		5F65424120998BF700BBFD09 /* EasyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyView.h; sourceTree = "<group>"; };
+		5F65424320998D3300BBFD09 /* UIEasyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyViewController.h; sourceTree = "<group>"; };
+		5F65424420998D3300BBFD09 /* UIEasyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyViewController.m; sourceTree = "<group>"; };
+		5F65424620998D5000BBFD09 /* UIEasyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyTableViewController.h; sourceTree = "<group>"; };
+		5F65424720998D5000BBFD09 /* UIEasyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyTableViewController.m; sourceTree = "<group>"; };
+		5F65424920998D9700BBFD09 /* EasyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyViewController.h; sourceTree = "<group>"; };
+		5F654251209990E600BBFD09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EasyBaseLocalizable.strings; sourceTree = "<group>"; };
+		5F6542532099919C00BBFD09 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		5F6542542099919C00BBFD09 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		5F6542552099919D00BBFD09 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/EasyBaseLocalizable.strings"; sourceTree = "<group>"; };
+		5F654256209994FD00BBFD09 /* EasyConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyConstant.h; sourceTree = "<group>"; };
+		5FC2BCB220A04CBF00462C54 /* UIColor+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+EasyExtension.h"; sourceTree = "<group>"; };
+		5FC2BCB320A04CBF00462C54 /* UIColor+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EasyExtension.m"; sourceTree = "<group>"; };
+		5FC2BCB820A07D9D00462C54 /* UINavigationBar+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+EasyExtension.h"; sourceTree = "<group>"; };
+		5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+EasyExtension.m"; sourceTree = "<group>"; };
+		CA6F81417907D42FE128111D /* Pods-EasyBaseVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBaseVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC.release.xcconfig"; sourceTree = "<group>"; };
+		F4827F7FE436BB5F688132EC /* Pods-EasyBaseVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBaseVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F6541EB2099689E00BBFD09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2021CD4F626A91EBA40DD803 /* libPods-EasyBaseVC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654203209968A500BBFD09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F65420E209968A500BBFD09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F10524A209AB885006404A8 /* EasyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				5F10524B209AB8B4006404A8 /* EasyConfig.h */,
+				5F105247209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.h */,
+				5F105248209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m */,
+			);
+			path = EasyConfig;
+			sourceTree = "<group>";
+		};
+		5F6541E52099689E00BBFD09 = {
+			isa = PBXGroup;
+			children = (
+				5F6541F02099689E00BBFD09 /* EasyBaseVC */,
+				5F654209209968A500BBFD09 /* EasyBaseVCTests */,
+				5F654214209968A500BBFD09 /* EasyBaseVCUITests */,
+				5F6541EF2099689E00BBFD09 /* Products */,
+				6D5DB48D80B46EDF1FBE217F /* Pods */,
+				E3339788BFF20805C70B774E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F6541EF2099689E00BBFD09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F6541EE2099689E00BBFD09 /* EasyBaseVC.app */,
+				5F654206209968A500BBFD09 /* EasyBaseVCTests.xctest */,
+				5F654211209968A500BBFD09 /* EasyBaseVCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F6541F02099689E00BBFD09 /* EasyBaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				5F6542232099695A00BBFD09 /* EasyBaseVC */,
+				5F6541F12099689E00BBFD09 /* AppDelegate.h */,
+				5F6541F22099689E00BBFD09 /* AppDelegate.m */,
+				5F6541F42099689E00BBFD09 /* ViewController.h */,
+				5F6541F52099689E00BBFD09 /* ViewController.m */,
+				5F6542292099894A00BBFD09 /* SupportFiles */,
+			);
+			path = EasyBaseVC;
+			sourceTree = "<group>";
+		};
+		5F654209209968A500BBFD09 /* EasyBaseVCTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F65420A209968A500BBFD09 /* EasyBaseVCTests.m */,
+				5F65420C209968A500BBFD09 /* Info.plist */,
+			);
+			path = EasyBaseVCTests;
+			sourceTree = "<group>";
+		};
+		5F654214209968A500BBFD09 /* EasyBaseVCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F654215209968A500BBFD09 /* EasyBaseVCUITests.m */,
+				5F654217209968A500BBFD09 /* Info.plist */,
+			);
+			path = EasyBaseVCUITests;
+			sourceTree = "<group>";
+		};
+		5F6542232099695A00BBFD09 /* EasyBaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				5F654224209969E100BBFD09 /* EasyBase.h */,
+				5F65422820996A6F00BBFD09 /* EasyMacros.h */,
+				5F654256209994FD00BBFD09 /* EasyConstant.h */,
+				5F654252209990E600BBFD09 /* EasyBaseLocalizable.strings */,
+				5F65422520996A0700BBFD09 /* EasyVC */,
+				5F65422720996A4D00BBFD09 /* EasyView */,
+				5F65422620996A2600BBFD09 /* EasyCategory */,
+				5F10524A209AB885006404A8 /* EasyConfig */,
+			);
+			path = EasyBaseVC;
+			sourceTree = "<group>";
+		};
+		5F65422520996A0700BBFD09 /* EasyVC */ = {
+			isa = PBXGroup;
+			children = (
+				5F65424920998D9700BBFD09 /* EasyViewController.h */,
+				5F65424320998D3300BBFD09 /* UIEasyViewController.h */,
+				5F65424420998D3300BBFD09 /* UIEasyViewController.m */,
+				5F65424620998D5000BBFD09 /* UIEasyTableViewController.h */,
+				5F65424720998D5000BBFD09 /* UIEasyTableViewController.m */,
+				5F10523F209AB24E006404A8 /* UIEasyCollectionViewController.h */,
+				5F105240209AB24E006404A8 /* UIEasyCollectionViewController.m */,
+			);
+			path = EasyVC;
+			sourceTree = "<group>";
+		};
+		5F65422620996A2600BBFD09 /* EasyCategory */ = {
+			isa = PBXGroup;
+			children = (
+				5F65422B20998AD300BBFD09 /* EasyCategory.h */,
+				5F65422C20998AF000BBFD09 /* NSDictionary+EasyExtension.h */,
+				5F65422D20998AF000BBFD09 /* NSDictionary+EasyExtension.m */,
+				5F65422F20998B1100BBFD09 /* NSString+EasyExtension.h */,
+				5F65423020998B1100BBFD09 /* NSString+EasyExtension.m */,
+				5F65423220998B2200BBFD09 /* UIView+EasyExtension.h */,
+				5F65423320998B2200BBFD09 /* UIView+EasyExtension.m */,
+				5F65423520998B3200BBFD09 /* NSObject+EasyExtension.h */,
+				5F65423620998B3200BBFD09 /* NSObject+EasyExtension.m */,
+				5FC2BCB220A04CBF00462C54 /* UIColor+EasyExtension.h */,
+				5FC2BCB320A04CBF00462C54 /* UIColor+EasyExtension.m */,
+				5FC2BCB820A07D9D00462C54 /* UINavigationBar+EasyExtension.h */,
+				5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */,
+			);
+			path = EasyCategory;
+			sourceTree = "<group>";
+		};
+		5F65422720996A4D00BBFD09 /* EasyView */ = {
+			isa = PBXGroup;
+			children = (
+				5F65424120998BF700BBFD09 /* EasyView.h */,
+				5F65423820998BAB00BBFD09 /* UIEasyTableViewCell.h */,
+				5F65423920998BAB00BBFD09 /* UIEasyTableViewCell.m */,
+				5F10524C209ABB91006404A8 /* UIEasyCollectionViewCell.h */,
+				5F10524D209ABB91006404A8 /* UIEasyCollectionViewCell.m */,
+				5F65423B20998BBE00BBFD09 /* UIEasyView.h */,
+				5F65423C20998BBE00BBFD09 /* UIEasyView.m */,
+				5F65423E20998BD900BBFD09 /* UIEasyControl.h */,
+				5F65423F20998BD900BBFD09 /* UIEasyControl.m */,
+			);
+			path = EasyView;
+			sourceTree = "<group>";
+		};
+		5F6542292099894A00BBFD09 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5F6541F72099689E00BBFD09 /* Main.storyboard */,
+				5F6541FA209968A400BBFD09 /* Assets.xcassets */,
+				5F6541FC209968A400BBFD09 /* LaunchScreen.storyboard */,
+				5F6541FF209968A400BBFD09 /* Info.plist */,
+				5F654200209968A400BBFD09 /* main.m */,
+				5F65422A2099896F00BBFD09 /* PrefixHeader.pch */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		6D5DB48D80B46EDF1FBE217F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4827F7FE436BB5F688132EC /* Pods-EasyBaseVC.debug.xcconfig */,
+				CA6F81417907D42FE128111D /* Pods-EasyBaseVC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3339788BFF20805C70B774E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13292BBA55414FB69DF65DCC /* libPods-EasyBaseVC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F6541ED2099689E00BBFD09 /* EasyBaseVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F65421A209968A500BBFD09 /* Build configuration list for PBXNativeTarget "EasyBaseVC" */;
+			buildPhases = (
+				2409B956EB29BE29B43EC4A5 /* [CP] Check Pods Manifest.lock */,
+				5F6541EA2099689E00BBFD09 /* Sources */,
+				5F6541EB2099689E00BBFD09 /* Frameworks */,
+				5F6541EC2099689E00BBFD09 /* Resources */,
+				11B48EE4E5EE07DF73170168 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyBaseVC;
+			productName = EasyBaseVC;
+			productReference = 5F6541EE2099689E00BBFD09 /* EasyBaseVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F654205209968A500BBFD09 /* EasyBaseVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F65421D209968A500BBFD09 /* Build configuration list for PBXNativeTarget "EasyBaseVCTests" */;
+			buildPhases = (
+				5F654202209968A500BBFD09 /* Sources */,
+				5F654203209968A500BBFD09 /* Frameworks */,
+				5F654204209968A500BBFD09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F654208209968A500BBFD09 /* PBXTargetDependency */,
+			);
+			name = EasyBaseVCTests;
+			productName = EasyBaseVCTests;
+			productReference = 5F654206209968A500BBFD09 /* EasyBaseVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F654210209968A500BBFD09 /* EasyBaseVCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F654220209968A500BBFD09 /* Build configuration list for PBXNativeTarget "EasyBaseVCUITests" */;
+			buildPhases = (
+				5F65420D209968A500BBFD09 /* Sources */,
+				5F65420E209968A500BBFD09 /* Frameworks */,
+				5F65420F209968A500BBFD09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F654213209968A500BBFD09 /* PBXTargetDependency */,
+			);
+			name = EasyBaseVCUITests;
+			productName = EasyBaseVCUITests;
+			productReference = 5F654211209968A500BBFD09 /* EasyBaseVCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F6541E62099689E00BBFD09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = EasyGoing;
+				TargetAttributes = {
+					5F6541ED2099689E00BBFD09 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					5F654205209968A500BBFD09 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5F6541ED2099689E00BBFD09;
+					};
+					5F654210209968A500BBFD09 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5F6541ED2099689E00BBFD09;
+					};
+				};
+			};
+			buildConfigurationList = 5F6541E92099689E00BBFD09 /* Build configuration list for PBXProject "EasyBaseVC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 5F6541E52099689E00BBFD09;
+			productRefGroup = 5F6541EF2099689E00BBFD09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F6541ED2099689E00BBFD09 /* EasyBaseVC */,
+				5F654205209968A500BBFD09 /* EasyBaseVCTests */,
+				5F654210209968A500BBFD09 /* EasyBaseVCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F6541EC2099689E00BBFD09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6541FE209968A400BBFD09 /* LaunchScreen.storyboard in Resources */,
+				5F6541FB209968A400BBFD09 /* Assets.xcassets in Resources */,
+				5F6541F92099689E00BBFD09 /* Main.storyboard in Resources */,
+				5F654250209990E600BBFD09 /* EasyBaseLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654204209968A500BBFD09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F65420F209968A500BBFD09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11B48EE4E5EE07DF73170168 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2409B956EB29BE29B43EC4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyBaseVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F6541EA2099689E00BBFD09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F65422E20998AF000BBFD09 /* NSDictionary+EasyExtension.m in Sources */,
+				5F6541F62099689E00BBFD09 /* ViewController.m in Sources */,
+				5F65423D20998BBE00BBFD09 /* UIEasyView.m in Sources */,
+				5F654201209968A400BBFD09 /* main.m in Sources */,
+				5F105241209AB24E006404A8 /* UIEasyCollectionViewController.m in Sources */,
+				5F10524E209ABB91006404A8 /* UIEasyCollectionViewCell.m in Sources */,
+				5F65423A20998BAB00BBFD09 /* UIEasyTableViewCell.m in Sources */,
+				5F105249209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m in Sources */,
+				5F65423720998B3200BBFD09 /* NSObject+EasyExtension.m in Sources */,
+				5FC2BCBA20A07D9D00462C54 /* UINavigationBar+EasyExtension.m in Sources */,
+				5FC2BCB420A04CBF00462C54 /* UIColor+EasyExtension.m in Sources */,
+				5F65423120998B1100BBFD09 /* NSString+EasyExtension.m in Sources */,
+				5F65424020998BD900BBFD09 /* UIEasyControl.m in Sources */,
+				5F65423420998B2200BBFD09 /* UIView+EasyExtension.m in Sources */,
+				5F65424820998D5000BBFD09 /* UIEasyTableViewController.m in Sources */,
+				5F65424520998D3300BBFD09 /* UIEasyViewController.m in Sources */,
+				5F6541F32099689E00BBFD09 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654202209968A500BBFD09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F65420B209968A500BBFD09 /* EasyBaseVCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F65420D209968A500BBFD09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F654216209968A500BBFD09 /* EasyBaseVCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F654208209968A500BBFD09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6541ED2099689E00BBFD09 /* EasyBaseVC */;
+			targetProxy = 5F654207209968A500BBFD09 /* PBXContainerItemProxy */;
+		};
+		5F654213209968A500BBFD09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6541ED2099689E00BBFD09 /* EasyBaseVC */;
+			targetProxy = 5F654212209968A500BBFD09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F6541F72099689E00BBFD09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6541F82099689E00BBFD09 /* Base */,
+				5F6542532099919C00BBFD09 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F6541FC209968A400BBFD09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6541FD209968A400BBFD09 /* Base */,
+				5F6542542099919C00BBFD09 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5F654252209990E600BBFD09 /* EasyBaseLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F654251209990E600BBFD09 /* en */,
+				5F6542552099919D00BBFD09 /* zh-Hans */,
+			);
+			name = EasyBaseLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F654218209968A500BBFD09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F654219209968A500BBFD09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F65421B209968A500BBFD09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4827F7FE436BB5F688132EC /* Pods-EasyBaseVC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QG6YWQHVH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EasyBaseVC/SupportFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = EasyBaseVC/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EG.EasyBaseVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F65421C209968A500BBFD09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6F81417907D42FE128111D /* Pods-EasyBaseVC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QG6YWQHVH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EasyBaseVC/SupportFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = EasyBaseVC/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EG.EasyBaseVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F65421E209968A500BBFD09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QG6YWQHVH;
+				INFOPLIST_FILE = EasyBaseVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EG.EasyBaseVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyBaseVC.app/EasyBaseVC";
+			};
+			name = Debug;
+		};
+		5F65421F209968A500BBFD09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QG6YWQHVH;
+				INFOPLIST_FILE = EasyBaseVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EG.EasyBaseVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyBaseVC.app/EasyBaseVC";
+			};
+			name = Release;
+		};
+		5F654221209968A500BBFD09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QG6YWQHVH;
+				INFOPLIST_FILE = EasyBaseVCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EG.EasyBaseVCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBaseVC;
+			};
+			name = Debug;
+		};
+		5F654222209968A500BBFD09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QG6YWQHVH;
+				INFOPLIST_FILE = EasyBaseVCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EG.EasyBaseVCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBaseVC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F6541E92099689E00BBFD09 /* Build configuration list for PBXProject "EasyBaseVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F654218209968A500BBFD09 /* Debug */,
+				5F654219209968A500BBFD09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F65421A209968A500BBFD09 /* Build configuration list for PBXNativeTarget "EasyBaseVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F65421B209968A500BBFD09 /* Debug */,
+				5F65421C209968A500BBFD09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F65421D209968A500BBFD09 /* Build configuration list for PBXNativeTarget "EasyBaseVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F65421E209968A500BBFD09 /* Debug */,
+				5F65421F209968A500BBFD09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F654220209968A500BBFD09 /* Build configuration list for PBXNativeTarget "EasyBaseVCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F654221209968A500BBFD09 /* Debug */,
+				5F654222209968A500BBFD09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F6541E62099689E00BBFD09 /* Project object */;
+}
