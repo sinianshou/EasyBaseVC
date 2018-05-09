@@ -17,4 +17,5 @@
 
 #import "UIEasyControl.h"
 
+#import "UIEasyTableView.h"
 #endif /* EasyView_h */

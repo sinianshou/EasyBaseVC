@@ -27,13 +27,14 @@
 //        self.sectionInset = UIEdgeInsetsMake(0.0f, leadSpacing, 0.0f, leadSpacing);
         // 设置各单元格之间最小的行间距
         self.minimumLineSpacing = minLineSpacing;
+        self.minimumInteritemSpacing = minLineSpacing;
     }
     return self;
 }
 // 该方法的返回值决定当UICollectionView的bounds改变时，是否需要重新布局
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
-{
-    // 返回YES表示需要重新布局
-    return YES;
-}
+//- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
+//{
+//    // 返回YES表示需要重新布局
+//    return YES;
+//}
 @end

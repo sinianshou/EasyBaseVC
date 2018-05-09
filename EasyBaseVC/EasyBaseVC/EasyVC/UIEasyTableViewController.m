@@ -9,13 +9,17 @@
 #import "UIEasyTableViewController.h"
 
 #import "EasyConstant.h"
+#import "UIEasyTableView.h"
+#import "UIEasyTableViewCell.h"
+
 @interface UIEasyTableViewController ()<UITableViewDelegate, UITableViewDataSource>{
     NSMutableArray * _dataSource_MutableArr;
     NSMutableDictionary * _dataSource_MutableDic;
 }
 
 @property (nonatomic, strong) UIView *topView;
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIEasyTableView *tableView;
+//@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIView *bottomView;
 @end
 
@@ -23,51 +27,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    CGFloat topOffset = 0.00;
-    CGFloat bottomOffset = 0.00;
-    
-    UINavigationController *navigationVC = self.navigationController;
-    UITabBarController *tabbarVC = self.tabBarController;
-    if (navigationVC != nil) {
-        
-        topOffset = CGRectGetMaxY(navigationVC.navigationBar.frame);
-        topOffset = 64.0;
-        if (tabbarVC == nil) {
-            tabbarVC = navigationVC.tabBarController;
-        }
-    }
-    if (tabbarVC != nil) {
-        bottomOffset = CGRectGetHeight(tabbarVC.tabBar.frame);
-    }
-    
-    CGRect safeAreaRect = CGRectMake(0.00, topOffset, self.view.frame.size.width, self.view.frame.size.height-topOffset - bottomOffset);
-    self.tableView.frame = safeAreaRect;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     //设置topview frame
     if (self.topView) {
         if (![self.view.subviews containsObject:self.topView]) {
             [self.view addSubview:self.topView];
         }
-        self.topView.translatesAutoresizingMaskIntoConstraints = YES;
-        self.tableView.translatesAutoresizingMaskIntoConstraints = YES;
-        CGRect topViewRect = self.topView.bounds;
-        CGRect tableViewRect = self.tableView.frame;
-        self.topView.frame = CGRectMake(tableViewRect.origin.x, tableViewRect.origin.y, tableViewRect.size.width, topViewRect.size.height);
-        self.tableView.frame = CGRectMake(tableViewRect.origin.x, self.topView.frame.origin.y + topViewRect.size.height, tableViewRect.size.width, tableViewRect.size.height - (self.topView.frame.origin.y + topViewRect.size.height));
+        [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.topView.mas_bottom);
+        }];
+        CGFloat topHeight = CGRectGetHeight(self.topView.bounds)?:44.0;
+        [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.width.equalTo(self.view);
+            make.height.mas_equalTo(topHeight);
+        }];
+    }else{
+        [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.view);
+        }];
     }
     //设置bottomView frame
     if (self.bottomView) {
         if (![self.view.subviews containsObject:self.bottomView]) {
             [self.view addSubview:self.bottomView];
         }
-        self.bottomView.translatesAutoresizingMaskIntoConstraints = YES;
-        self.tableView.translatesAutoresizingMaskIntoConstraints = YES;
-        CGRect bottomViewRect = self.bottomView.bounds;
-        CGRect tableViewRect = self.tableView.frame;
-        self.bottomView.frame = CGRectMake(tableViewRect.origin.x, tableViewRect.origin.y + tableViewRect.size.height - bottomViewRect.size.height, tableViewRect.size.width, bottomViewRect.size.height);
-        self.tableView.frame = CGRectMake(tableViewRect.origin.x, tableViewRect.origin.y, tableViewRect.size.width, tableViewRect.size.height - bottomViewRect.size.height);
+        [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(self.bottomView.mas_top);
+        }];
+        CGFloat bottomHeight = CGRectGetHeight(self.bottomView.bounds)?:44.0;
+        [self.bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.width.equalTo(self.view);
+            make.height.mas_equalTo(bottomHeight);
+        }];
+    }else{
+        [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self.view);
+        }];
     }
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.width.equalTo(self.view);
+        make.height.mas_greaterThanOrEqualTo(0.1);
+    }];
     
     self.tableView.estimatedSectionHeaderHeight = 10;
     self.tableView.estimatedSectionFooterHeight = 10;
@@ -82,7 +82,7 @@
 #pragma mark - Table view delegate
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    switch (self.CellAnimationType) {
+    switch (self.cellAnimationType) {
         case UIEasyTableCellAnimationTypeNone:
             break;
         case UIEasyTableCellAnimationTypeInsertion:
@@ -98,9 +98,9 @@
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier];
+    UIEasyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:self.reuseIdentifier];
+        cell = [[UIEasyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:self.reuseIdentifier];
     }
     //配置 cell
     return cell;
@@ -163,27 +163,24 @@
     }
     return _dataSource_MutableDic;
 }
--(UITableView *)tableView{
-    if (_tableView == nil) {
-        UITableView *temp = [[UITableView alloc] initWithFrame:CGRectZero style:self.tableViewStyle];
+-(UIEasyTableView *)tableView{
+    if (!_tableView) {
+        UIEasyTableView *temp = [[UIEasyTableView alloc] initWithFrame:CGRectZero style:self.tableViewStyle];
         _tableView = temp;
-        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-        [self.view addSubview:_tableView];
-        self.automaticallyAdjustsScrollViewInsets = NO; //Easy_待fix：添加版本判断
-        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        //        [self.view addSubview:_tableView];
+//        self.automaticallyAdjustsScrollViewInsets = NO; //Easy_待fix：添加版本判断
+        NSLog(@"create table")
         _tableView.delegate = self;
         _tableView.dataSource = self;
+//        if (self.tableViewStyle == UITableViewStyleGrouped) {
+//            _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+//        }
+    }
+    if (![self.view.subviews containsObject:_tableView]) {
+        [self.view addSubview:_tableView];
     }
     return _tableView;
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

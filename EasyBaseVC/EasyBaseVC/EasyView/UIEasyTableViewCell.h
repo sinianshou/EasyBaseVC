@@ -11,6 +11,7 @@
 @interface UIEasyTableViewCell : UITableViewCell
 @property (nonatomic, copy) id model;
 @property (nonatomic, copy) id userInfo;
+@property (weak, nonatomic) UITableView *tableView;
 - (BOOL)refreshModel:(id)model withUserInfo:(id)userInfo;
 -(CGFloat)cellHeight;
 @end

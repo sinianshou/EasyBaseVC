@@ -11,6 +11,8 @@
 		5F105241209AB24E006404A8 /* UIEasyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F105240209AB24E006404A8 /* UIEasyCollectionViewController.m */; };
 		5F105249209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F105248209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m */; };
 		5F10524E209ABB91006404A8 /* UIEasyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10524D209ABB91006404A8 /* UIEasyCollectionViewCell.m */; };
+		5F33645320A2D5B300EBE0B7 /* UIEasyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F33645220A2D5B300EBE0B7 /* UIEasyTableView.m */; };
+		5F4D424F20A1CD95005E63B1 /* UIImage+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D424E20A1CD95005E63B1 /* UIImage+EasyExtension.m */; };
 		5F6541F32099689E00BBFD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6541F22099689E00BBFD09 /* AppDelegate.m */; };
 		5F6541F62099689E00BBFD09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6541F52099689E00BBFD09 /* ViewController.m */; };
 		5F6541F92099689E00BBFD09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6541F72099689E00BBFD09 /* Main.storyboard */; };
@@ -59,6 +61,10 @@
 		5F10524B209AB8B4006404A8 /* EasyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyConfig.h; sourceTree = "<group>"; };
 		5F10524C209ABB91006404A8 /* UIEasyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyCollectionViewCell.h; sourceTree = "<group>"; };
 		5F10524D209ABB91006404A8 /* UIEasyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyCollectionViewCell.m; sourceTree = "<group>"; };
+		5F33645120A2D5B300EBE0B7 /* UIEasyTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyTableView.h; sourceTree = "<group>"; };
+		5F33645220A2D5B300EBE0B7 /* UIEasyTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyTableView.m; sourceTree = "<group>"; };
+		5F4D424D20A1CD95005E63B1 /* UIImage+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+EasyExtension.h"; sourceTree = "<group>"; };
+		5F4D424E20A1CD95005E63B1 /* UIImage+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EasyExtension.m"; sourceTree = "<group>"; };
 		5F6541EE2099689E00BBFD09 /* EasyBaseVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBaseVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6541F12099689E00BBFD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5F6541F22099689E00BBFD09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -246,6 +252,8 @@
 				5FC2BCB320A04CBF00462C54 /* UIColor+EasyExtension.m */,
 				5FC2BCB820A07D9D00462C54 /* UINavigationBar+EasyExtension.h */,
 				5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */,
+				5F4D424D20A1CD95005E63B1 /* UIImage+EasyExtension.h */,
+				5F4D424E20A1CD95005E63B1 /* UIImage+EasyExtension.m */,
 			);
 			path = EasyCategory;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 				5F65423C20998BBE00BBFD09 /* UIEasyView.m */,
 				5F65423E20998BD900BBFD09 /* UIEasyControl.h */,
 				5F65423F20998BD900BBFD09 /* UIEasyControl.m */,
+				5F33645120A2D5B300EBE0B7 /* UIEasyTableView.h */,
+				5F33645220A2D5B300EBE0B7 /* UIEasyTableView.m */,
 			);
 			path = EasyView;
 			sourceTree = "<group>";
@@ -474,8 +484,10 @@
 				5F65423D20998BBE00BBFD09 /* UIEasyView.m in Sources */,
 				5F654201209968A400BBFD09 /* main.m in Sources */,
 				5F105241209AB24E006404A8 /* UIEasyCollectionViewController.m in Sources */,
+				5F33645320A2D5B300EBE0B7 /* UIEasyTableView.m in Sources */,
 				5F10524E209ABB91006404A8 /* UIEasyCollectionViewCell.m in Sources */,
 				5F65423A20998BAB00BBFD09 /* UIEasyTableViewCell.m in Sources */,
+				5F4D424F20A1CD95005E63B1 /* UIImage+EasyExtension.m in Sources */,
 				5F105249209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m in Sources */,
 				5F65423720998B3200BBFD09 /* NSObject+EasyExtension.m in Sources */,
 				5FC2BCBA20A07D9D00462C54 /* UINavigationBar+EasyExtension.m in Sources */,

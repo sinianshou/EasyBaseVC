@@ -15,6 +15,7 @@
 @property (nonatomic, copy) NSMutableArray * dataSource_MutableArr;
 @property (nonatomic, copy) NSMutableDictionary * dataSource_MutableDic;
 
+- (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout*)layout registerClass:(Class)class;
 -(void)setTopView:(UIView *)topView;
 -(void)setBottomView:(UIView *)bottomView;
 -(UIView *)topView;

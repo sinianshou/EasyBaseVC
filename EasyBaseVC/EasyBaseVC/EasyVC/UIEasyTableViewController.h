@@ -15,13 +15,13 @@ typedef NS_ENUM(NSInteger, UIEasyTableCellAnimationType) {
 
 @interface UIEasyTableViewController : UIEasyViewController
 
-@property (nonatomic, strong) NSString * reuseIdentifier;
+@property (nonatomic, copy) NSString * reuseIdentifier;
 
 @property (nonatomic, copy) NSMutableArray * dataSource_MutableArr;
 @property (nonatomic, copy) NSMutableDictionary * dataSource_MutableDic;
 
 @property (nonatomic, strong) id tempCell;
-@property (nonatomic, assign) UIEasyTableCellAnimationType CellAnimationType;
+@property (nonatomic, assign) UIEasyTableCellAnimationType cellAnimationType;
 @property (nonatomic, assign) UITableViewStyle tableViewStyle;
 
 -(void)setTopView:(UIView *)topView;

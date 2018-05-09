@@ -10,4 +10,10 @@
 
 @interface UIEasyCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) id model;
+@property (nonatomic, strong) id userInfo;
+@property (weak, nonatomic) UICollectionView *collectionView;
+
+- (BOOL)refreshModel:(id)model withUserInfo:(id)userInfo;
+- (void)clear;
 @end

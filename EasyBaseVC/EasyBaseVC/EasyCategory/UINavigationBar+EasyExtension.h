@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UINavigationBar (EasyExtension)
-
 #pragma mark ---- setBackgroundColor
 - (void)easy_setBackgroundColor:(UIColor *)backgroundColor;
 @end

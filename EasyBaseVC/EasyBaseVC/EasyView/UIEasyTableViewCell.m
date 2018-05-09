@@ -11,6 +11,13 @@
 #import "EasyConstant.h"
 @implementation UIEasyTableViewCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    return self;
+}
 - (BOOL)refreshModel:(id)model withUserInfo:(id)userInfo{
     [self clear];
     return YES;
@@ -47,5 +54,16 @@
 
     // Configure the view for the selected state
 }
-
+#pragma mark ---- Setter
+#pragma mark ---- Getter
+-(UITableView *)tableView{
+    if (!_tableView) {
+        UIView *view = self;
+        do {
+            view = view.superview;
+        } while (![view isKindOfClass:[UITableView class]] || !view);
+        _tableView = (UITableView *)view;
+    }
+    return _tableView;
+}
 @end

@@ -90,12 +90,12 @@
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 0;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 100;
+    return 0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -157,10 +157,11 @@
 }
 -(UICollectionView *)collectionView{
     if (!_collectionView) {
-        UIEasyCollectionViewFlowLayout *layout = [[UIEasyCollectionViewFlowLayout alloc] init];
-        UICollectionView *temp = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 10, 10) collectionViewLayout:layout];
+        UICollectionView *temp = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 10, 10) collectionViewLayout:self.collectionViewLayout];
         _collectionView = temp;
         [self.view addSubview:_collectionView];
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
     }
     return _collectionView;
 }

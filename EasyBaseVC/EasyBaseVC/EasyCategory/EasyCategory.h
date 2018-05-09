@@ -24,7 +24,9 @@
 #pragma mark ---- UIColor category
 #import "UIColor+EasyExtension.h"
 
-
 #pragma mark ---- UIColor category
 #import "UINavigationBar+EasyExtension.h"
+
+#pragma mark ---- UIImage category
+#import "UIImage+EasyExtension.h"
 #endif /* EasyCategory_h */
