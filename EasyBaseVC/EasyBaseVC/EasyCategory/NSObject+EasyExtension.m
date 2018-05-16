@@ -66,7 +66,9 @@ static const char *easyMethodListKey = "EasyMethodList";
         return nil;
     }
     if ([self respondsToSelector:aSelector]) {
-        return [self performSelector:aSelector withObject:object];
+        IMP imp = [self methodForSelector:aSelector];
+        id (*func)(id, SEL, id) = (void *)imp;
+        return func(self, aSelector, object);
     }
     return nil;
 }

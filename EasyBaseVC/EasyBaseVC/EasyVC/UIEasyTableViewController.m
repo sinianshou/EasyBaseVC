@@ -1,4 +1,4 @@
-//
+;//
 //  UIEasyTableViewController.m
 //  EasyBaseVC
 //
@@ -165,16 +165,13 @@
 }
 -(UIEasyTableView *)tableView{
     if (!_tableView) {
+        self.tableViewStyle = UITableViewStyleGrouped;
         UIEasyTableView *temp = [[UIEasyTableView alloc] initWithFrame:CGRectZero style:self.tableViewStyle];
         _tableView = temp;
-        //        [self.view addSubview:_tableView];
-//        self.automaticallyAdjustsScrollViewInsets = NO; //Easy_待fix：添加版本判断
-        NSLog(@"create table")
+        self.automaticallyAdjustsScrollViewInsets = NO; //Easy_待fix：添加版本判断
         _tableView.delegate = self;
         _tableView.dataSource = self;
-//        if (self.tableViewStyle == UITableViewStyleGrouped) {
-//            _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-//        }
+        [self.view addSubview:_tableView];
     }
     if (![self.view.subviews containsObject:_tableView]) {
         [self.view addSubview:_tableView];

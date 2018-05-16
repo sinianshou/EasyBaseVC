@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIEasyTableViewCell : UITableViewCell
-@property (nonatomic, copy) id model;
-@property (nonatomic, copy) id userInfo;
+@property (nonatomic, strong) id model;
+@property (nonatomic, strong) id userInfo;
 @property (weak, nonatomic) UITableView *tableView;
 - (BOOL)refreshModel:(id)model withUserInfo:(id)userInfo;
 -(CGFloat)cellHeight;

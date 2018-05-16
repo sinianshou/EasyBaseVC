@@ -31,8 +31,10 @@
 		5F65424520998D3300BBFD09 /* UIEasyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65424420998D3300BBFD09 /* UIEasyViewController.m */; };
 		5F65424820998D5000BBFD09 /* UIEasyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F65424720998D5000BBFD09 /* UIEasyTableViewController.m */; };
 		5F654250209990E600BBFD09 /* EasyBaseLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F654252209990E600BBFD09 /* EasyBaseLocalizable.strings */; };
+		5FC0D7AF20A9A29200A3D580 /* UIViewController+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0D7AE20A9A29200A3D580 /* UIViewController+EasyExtension.m */; };
 		5FC2BCB420A04CBF00462C54 /* UIColor+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2BCB320A04CBF00462C54 /* UIColor+EasyExtension.m */; };
 		5FC2BCBA20A07D9D00462C54 /* UINavigationBar+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */; };
+		5FC6072C20A53AF90053A955 /* UISearchBar+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6072B20A53AF90053A955 /* UISearchBar+EasyExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,10 +112,14 @@
 		5F6542542099919C00BBFD09 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		5F6542552099919D00BBFD09 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/EasyBaseLocalizable.strings"; sourceTree = "<group>"; };
 		5F654256209994FD00BBFD09 /* EasyConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyConstant.h; sourceTree = "<group>"; };
+		5FC0D7AD20A9A29200A3D580 /* UIViewController+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EasyExtension.h"; sourceTree = "<group>"; };
+		5FC0D7AE20A9A29200A3D580 /* UIViewController+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EasyExtension.m"; sourceTree = "<group>"; };
 		5FC2BCB220A04CBF00462C54 /* UIColor+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+EasyExtension.h"; sourceTree = "<group>"; };
 		5FC2BCB320A04CBF00462C54 /* UIColor+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EasyExtension.m"; sourceTree = "<group>"; };
 		5FC2BCB820A07D9D00462C54 /* UINavigationBar+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+EasyExtension.h"; sourceTree = "<group>"; };
 		5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+EasyExtension.m"; sourceTree = "<group>"; };
+		5FC6072A20A53AF90053A955 /* UISearchBar+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+EasyExtension.h"; sourceTree = "<group>"; };
+		5FC6072B20A53AF90053A955 /* UISearchBar+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+EasyExtension.m"; sourceTree = "<group>"; };
 		CA6F81417907D42FE128111D /* Pods-EasyBaseVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBaseVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC.release.xcconfig"; sourceTree = "<group>"; };
 		F4827F7FE436BB5F688132EC /* Pods-EasyBaseVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBaseVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +260,10 @@
 				5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */,
 				5F4D424D20A1CD95005E63B1 /* UIImage+EasyExtension.h */,
 				5F4D424E20A1CD95005E63B1 /* UIImage+EasyExtension.m */,
+				5FC6072A20A53AF90053A955 /* UISearchBar+EasyExtension.h */,
+				5FC6072B20A53AF90053A955 /* UISearchBar+EasyExtension.m */,
+				5FC0D7AD20A9A29200A3D580 /* UIViewController+EasyExtension.h */,
+				5FC0D7AE20A9A29200A3D580 /* UIViewController+EasyExtension.m */,
 			);
 			path = EasyCategory;
 			sourceTree = "<group>";
@@ -492,10 +502,12 @@
 				5F65423720998B3200BBFD09 /* NSObject+EasyExtension.m in Sources */,
 				5FC2BCBA20A07D9D00462C54 /* UINavigationBar+EasyExtension.m in Sources */,
 				5FC2BCB420A04CBF00462C54 /* UIColor+EasyExtension.m in Sources */,
+				5FC6072C20A53AF90053A955 /* UISearchBar+EasyExtension.m in Sources */,
 				5F65423120998B1100BBFD09 /* NSString+EasyExtension.m in Sources */,
 				5F65424020998BD900BBFD09 /* UIEasyControl.m in Sources */,
 				5F65423420998B2200BBFD09 /* UIView+EasyExtension.m in Sources */,
 				5F65424820998D5000BBFD09 /* UIEasyTableViewController.m in Sources */,
+				5FC0D7AF20A9A29200A3D580 /* UIViewController+EasyExtension.m in Sources */,
 				5F65424520998D3300BBFD09 /* UIEasyViewController.m in Sources */,
 				5F6541F32099689E00BBFD09 /* AppDelegate.m in Sources */,
 			);

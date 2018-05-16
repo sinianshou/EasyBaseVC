@@ -29,4 +29,10 @@
 
 #pragma mark ---- UIImage category
 #import "UIImage+EasyExtension.h"
+
+#pragma mark ---- UISearchBar category
+#import "UISearchBar+EasyExtension.h"
+
+#pragma mark ---- UISearchBar category
+#import "UIViewController+EasyExtension.h"
 #endif /* EasyCategory_h */

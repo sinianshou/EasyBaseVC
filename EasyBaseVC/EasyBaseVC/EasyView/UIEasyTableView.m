@@ -7,7 +7,12 @@
 //
 
 #import "UIEasyTableView.h"
-@interface UIEasyTableView ()<UIEasyTableViewRefreshDelegate>
+@interface UIEasyTableView ()<UIEasyTableViewRefreshDelegate>{
+    /*是否可以下拉刷新*/
+    BOOL _isCouldRefresh;
+    /*是否可以上拉加载*/
+    BOOL _isCouldLoadMore;
+}
 
 @end
 @implementation UIEasyTableView
@@ -23,7 +28,7 @@
     return self;
 }
 
-#pragma mark ---- about refreshing
+#pragma mark ---- about refreshing 
 - (void)refreshDataAction{
     if ([self.refreshDelegate respondsToSelector:@selector(refreshDataWithTableView:)]) {
         [self.refreshDelegate refreshDataWithTableView:self];
@@ -83,7 +88,24 @@
         self.mj_footer = nil;
     };
 }
-#pragma mark - Table view cell animations
+#pragma mark ---- Getter
+-(BOOL)isCouldRefresh{
+    if (self.mj_header) {
+        _isCouldRefresh = YES;
+    }else{
+        _isCouldRefresh = NO;
+    }
+    return _isCouldRefresh;
+}
+-(BOOL)isCouldLoadMore{
+    if (self.mj_footer) {
+        _isCouldLoadMore = YES;
+    }else{
+        _isCouldLoadMore = NO;
+    }
+    return _isCouldLoadMore;
+}
+#pragma mark - UIEasyTableViewRefreshDelegate
 - (void)refreshDataWithTableView:(UIEasyTableView*)tableView{
     [tableView finishUploadingData];
 }
