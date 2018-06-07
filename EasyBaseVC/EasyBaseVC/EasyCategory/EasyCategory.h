@@ -35,4 +35,10 @@
 
 #pragma mark ---- UISearchBar category
 #import "UIViewController+EasyExtension.h"
+
+#pragma mark ---- UIButton category
+#import "UIButton+EasyExtension.h"
+
+#pragma mark ---- NSData category
+#import "NSData+EasyExtension.h"
 #endif /* EasyCategory_h */

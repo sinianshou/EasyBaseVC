@@ -11,6 +11,7 @@
 		5F105241209AB24E006404A8 /* UIEasyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F105240209AB24E006404A8 /* UIEasyCollectionViewController.m */; };
 		5F105249209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F105248209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m */; };
 		5F10524E209ABB91006404A8 /* UIEasyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10524D209ABB91006404A8 /* UIEasyCollectionViewCell.m */; };
+		5F168D2020BFF4430043A07A /* NSData+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F168D1F20BFF4430043A07A /* NSData+EasyExtension.m */; };
 		5F33645320A2D5B300EBE0B7 /* UIEasyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F33645220A2D5B300EBE0B7 /* UIEasyTableView.m */; };
 		5F4D424F20A1CD95005E63B1 /* UIImage+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D424E20A1CD95005E63B1 /* UIImage+EasyExtension.m */; };
 		5F6541F32099689E00BBFD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6541F22099689E00BBFD09 /* AppDelegate.m */; };
@@ -35,6 +36,7 @@
 		5FC2BCB420A04CBF00462C54 /* UIColor+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2BCB320A04CBF00462C54 /* UIColor+EasyExtension.m */; };
 		5FC2BCBA20A07D9D00462C54 /* UINavigationBar+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */; };
 		5FC6072C20A53AF90053A955 /* UISearchBar+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6072B20A53AF90053A955 /* UISearchBar+EasyExtension.m */; };
+		5FEA365520B69D1C001DD797 /* UIButton+EasyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA365420B69D1C001DD797 /* UIButton+EasyExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		5F10524B209AB8B4006404A8 /* EasyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyConfig.h; sourceTree = "<group>"; };
 		5F10524C209ABB91006404A8 /* UIEasyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyCollectionViewCell.h; sourceTree = "<group>"; };
 		5F10524D209ABB91006404A8 /* UIEasyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyCollectionViewCell.m; sourceTree = "<group>"; };
+		5F168D1E20BFF4430043A07A /* NSData+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+EasyExtension.h"; sourceTree = "<group>"; };
+		5F168D1F20BFF4430043A07A /* NSData+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+EasyExtension.m"; sourceTree = "<group>"; };
 		5F33645120A2D5B300EBE0B7 /* UIEasyTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEasyTableView.h; sourceTree = "<group>"; };
 		5F33645220A2D5B300EBE0B7 /* UIEasyTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEasyTableView.m; sourceTree = "<group>"; };
 		5F4D424D20A1CD95005E63B1 /* UIImage+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+EasyExtension.h"; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		5FC2BCB920A07D9D00462C54 /* UINavigationBar+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+EasyExtension.m"; sourceTree = "<group>"; };
 		5FC6072A20A53AF90053A955 /* UISearchBar+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+EasyExtension.h"; sourceTree = "<group>"; };
 		5FC6072B20A53AF90053A955 /* UISearchBar+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+EasyExtension.m"; sourceTree = "<group>"; };
+		5FEA365320B69D1C001DD797 /* UIButton+EasyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+EasyExtension.h"; sourceTree = "<group>"; };
+		5FEA365420B69D1C001DD797 /* UIButton+EasyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EasyExtension.m"; sourceTree = "<group>"; };
 		CA6F81417907D42FE128111D /* Pods-EasyBaseVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBaseVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC.release.xcconfig"; sourceTree = "<group>"; };
 		F4827F7FE436BB5F688132EC /* Pods-EasyBaseVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBaseVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBaseVC/Pods-EasyBaseVC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -264,6 +270,10 @@
 				5FC6072B20A53AF90053A955 /* UISearchBar+EasyExtension.m */,
 				5FC0D7AD20A9A29200A3D580 /* UIViewController+EasyExtension.h */,
 				5FC0D7AE20A9A29200A3D580 /* UIViewController+EasyExtension.m */,
+				5FEA365320B69D1C001DD797 /* UIButton+EasyExtension.h */,
+				5FEA365420B69D1C001DD797 /* UIButton+EasyExtension.m */,
+				5F168D1E20BFF4430043A07A /* NSData+EasyExtension.h */,
+				5F168D1F20BFF4430043A07A /* NSData+EasyExtension.m */,
 			);
 			path = EasyCategory;
 			sourceTree = "<group>";
@@ -500,8 +510,10 @@
 				5F4D424F20A1CD95005E63B1 /* UIImage+EasyExtension.m in Sources */,
 				5F105249209AB53B006404A8 /* UIEasyCollectionViewFlowLayout.m in Sources */,
 				5F65423720998B3200BBFD09 /* NSObject+EasyExtension.m in Sources */,
+				5FEA365520B69D1C001DD797 /* UIButton+EasyExtension.m in Sources */,
 				5FC2BCBA20A07D9D00462C54 /* UINavigationBar+EasyExtension.m in Sources */,
 				5FC2BCB420A04CBF00462C54 /* UIColor+EasyExtension.m in Sources */,
+				5F168D2020BFF4430043A07A /* NSData+EasyExtension.m in Sources */,
 				5FC6072C20A53AF90053A955 /* UISearchBar+EasyExtension.m in Sources */,
 				5F65423120998B1100BBFD09 /* NSString+EasyExtension.m in Sources */,
 				5F65424020998BD900BBFD09 /* UIEasyControl.m in Sources */,
